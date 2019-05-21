@@ -29,5 +29,14 @@ void loop(){
             Serial.println(customKey);
             lcd.setCursor(0,1);
             lcd.print(customKey);
+            Serial.print(customKey);
+            lcd.setCursor(0,2);
+            lcd.print(customKey);
+            Serial.print(customKey);
+            lcd.setCursor(0,3);
+            lcd.print(customKey);
+            Serial.print(customKey);
+            lcd.setCursor(0,4);
+            lcd.print(customKey);
       }
 }
