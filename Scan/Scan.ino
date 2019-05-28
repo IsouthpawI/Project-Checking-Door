@@ -10,7 +10,7 @@ void setup()
   Serial.begin(9600);
   SPI.begin();
   mfrc522.PCD_Init();
-  Serial.println("Approximate your card to the reader...");
+  Serial.println("Approximate your card to the reader ->");
   Serial.println();
 
 }
@@ -27,7 +27,7 @@ void loop()
     return;
   }
 
-  Serial.print("UID tag :");
+  Serial.print("Card ID :");
   String content= "";
   byte letter;
   for (byte i = 0; i < mfrc522.uid.size; i++) 
@@ -48,7 +48,7 @@ void loop()
   }
  
  else   {
-    Serial.println(" Access denied");
+    Serial.println("Access denied");
     delay(3000);
   }
 } 
