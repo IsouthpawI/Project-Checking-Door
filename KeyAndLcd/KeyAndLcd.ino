@@ -39,4 +39,16 @@ void loop(){
             lcd.setCursor(0,4);
             lcd.print(customKey);
       }
+        if (customKey = 'A'){
+//      return user name;
+        }
+        if (customKey = 'B'){
+//      backspace
+        }
+        if (customKey = 'C'){
+        lcd.clear();
+        }
+        if (customKey = 'D'){
+//      
+        }
 }
